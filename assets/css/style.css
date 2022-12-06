@@ -532,7 +532,7 @@ body {
   }
   
   .navbar-b.navbar-reduce .navbar-toggler span {
-    background-color: silver;
+    background-color: rgb(250, 245, 245);
   }
   
   .navbar-b .navbar-brand {
