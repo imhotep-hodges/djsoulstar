@@ -1,0 +1,165 @@
+/* ------ Animations ------ */
+
+
+
+.css-typing h1 {
+    border-right: .15em solid white;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .css-typing p {
+    border-right: .15em solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .css-typing h1:nth-child(1) {
+    width: 3.7em;
+    -webkit-animation: type 1.5s steps(40, end);
+    animation: type 1.5s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 9.5em;
+    opacity: 0;
+    -webkit-animation: type2 1.5s steps(40, end);
+    animation: type2 1.5s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+  
+  :root {
+    --animate-duration: 2s;
+  }
+  
+  /* --- Media section --- */
+  
+  
+    iframe {
+    width: 980px;
+    height: 790px;
+  
+    }
+  
+  
+  @media screen and (max-width: 1200px) {
+    iframe {
+    width: 835px;
+    height: 655px;
+  
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    iframe {
+    width: 600px;
+    height: 420px;
+  
+    }
+  }
+  
+    @media screen and (max-width: 768px) {
+      iframe {
+      width: 270px;
+      height: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: auto;
+      padding-right: auto;
+  
+      }
+    }
+  
+    @media screen and (max-width: 576px) {
+      iframe {
+      width: 270px;
+      height: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: auto;
+      padding-right: auto;
+  
+      }
+    }
+  
